@@ -1,0 +1,4 @@
+/datalife/opt/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/mrez/workspace/code/insitu/src/mandelbrot
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mrez/workspace/code/insitu/src/mandelbrot/cmake-build-debug

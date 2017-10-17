@@ -1,0 +1,12 @@
+VISIT + LIBSIM + NEK5000
+
+So far there are three examples in the src directory.
+
+ # manderbrot file contains example of the simulator which uses libsim in interactive mode. The cmake contains the dependancies. In order to run it be sure to have -dir pointing to the current installed visit binaries.
+
+# mandelbulbsim contains the code to run the simulator in batch mode.
+
+# turboChannel directory is also dependant on the Nek5000 source code. This file needs a patch for Nek5000. TODO: add the patch file for Nek5000 to fix the libsim/visit bug (only related to fortran).
+
+
+

@@ -1,0 +1,230 @@
+VisItOpenTraceFile
+VisItSetDirectory dir=/usr/local/visit/2.12.3/linux-x86_64
+VisItSetDirectory
+VisItSetupEnvironment
+VisItSetupEnvironment2
+    ReadEnvironmentFromCommand visitpath=/usr/local/visit/2.12.3/linux-x86_64/bin/visit
+        command=/usr/local/visit/2.12.3/linux-x86_64/bin/visit  -env -engine 2>/dev/null
+        Output=(null)
+    ReadEnvironmentFromCommand return 0
+    ReadEnvironmentFromCommand visitpath=visit
+        command=visit  -env -engine 2>/dev/null
+        Output=(null)
+    ReadEnvironmentFromCommand return 0
+    ReadEnvironmentFromCommand visitpath=/usr/gapps/visit/bin/visit
+        command=/usr/gapps/visit/bin/visit  -env -engine 2>/dev/null
+        Output=(null)
+    ReadEnvironmentFromCommand return 0
+VisItSetupEnvironment2 return 0
+VisItSetupEnvironment return 0
+ReadEnvironmentFromCommand visitpath=/usr/local/visit/2.12.3/linux-x86_64/bin/visit
+command=/usr/local/visit/2.12.3/linux-x86_64/bin/visit  -env -engine 2>/dev/null
+Output=(null)
+ReadEnvironmentFromCommand return 0
+ReadEnvironmentFromCommand visitpath=visit
+command=visit  -env -engine 2>/dev/null
+Output=(null)
+ReadEnvironmentFromCommand return 0
+ReadEnvironmentFromCommand visitpath=/usr/gapps/visit/bin/visit
+command=/usr/gapps/visit/bin/visit  -env -engine 2>/dev/null
+Output=(null)
+ReadEnvironmentFromCommand return 0
+VisItGetEnvironment return NULL
+VisItSetupEnvironment2
+ReadEnvironmentFromCommand visitpath=/usr/local/visit/2.12.3/linux-x86_64/bin/visit
+command=/usr/local/visit/2.12.3/linux-x86_64/bin/visit  -env -engine 2>/dev/null
+Output=(null)
+ReadEnvironmentFromCommand return 0
+ReadEnvironmentFromCommand visitpath=visit
+command=visit  -env -engine 2>/dev/null
+Output=(null)
+ReadEnvironmentFromCommand return 0
+ReadEnvironmentFromCommand visitpath=/usr/gapps/visit/bin/visit
+command=/usr/gapps/visit/bin/visit  -env -engine 2>/dev/null
+Output=(null)
+ReadEnvironmentFromCommand return 0
+VisItSetupEnvironment2 return 0
+VisItInitializeSocketAndDumpSimFile
+name=mandelbrot
+comment=Demonstrates creating the Mandelbrot set on an AMR mesh
+path=/path/to/where/sim/was/started
+inputfile=(null)
+guifile=mandelbrot.ui
+absoluteFilename=(null)
+CreateRandomSecurityKey
+CreateRandomSecurityKey securityKey=8fcd93e601cf8253
+EnsureSimulationDirectoryExists
+GetHomeDirectory
+GetHomeDirectory homedir=/home/mrez
+mkdir /home/mrez/.visit
+mkdir /home/mrez/.visit/simulations
+EnsureSimulationDirectoryExists
+GetHomeDirectory
+GetHomeDirectory homedir=/home/mrez
+GetLocalhostName
+  Calling gethostname
+gethostname returned strader
+
+  Calling gethostbyname
+Using return value of gethostbyname: strader
+GetLocalhostName return strader
+StartListening
+Looking for a listening port
+  Calling listen() on socket
+StartListening return 1
+Opening sim file /home/mrez/.visit/simulations/001508243466.mandelbrot.sim2
+VisItInitializeSocketAndDumpSimFile return 1
+VisItUI_clicked
+VisItUI_clicked
+VisItUI_clicked
+VisItUI_clicked
+VisItUI_clicked
+VisItUI_clicked
+VisItUI_clicked
+VisItUI_clicked
+VisItUI_valueChanged
+VisItUI_valueChanged
+VisItUI_valueChanged
+VisItUI_valueChanged
+VisItUI_stateChanged
+VisItUI_stateChanged
+VisItUI_stateChanged
+VisItUI_stateChanged
+VisItUI_setValueI
+VisItUI_setValueI
+VisItUI_setValueI
+VisItUI_setValueI
+VisItUI_setValueI
+VisItUI_setValueI
+VisItUI_setValueI
+VisItUI_setValueI
+VisItDetectInput blocking=1, consoleFile=0
+VisItDetectInput Listen  socket input. return 1
+VisItAttemptToCompleteConnection
+AcceptConnection
+  Calling accept()
+AcceptConnection desc=14
+VerifySecurityKeys desc=14
+ReceiveSingleLineFromSocket maxlen=1024, desc=14
+ReceiveSingleLineFromSocket buffer=8fcd93e601cf8253
+SendStringOverSocket buffer=success
+, desc=14
+SendStringOverSocket return 1
+VerifySecurityKeys return 1
+GetConnectionParameters desc=14
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return visit
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return -v
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return 2.12
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return -engine
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return -host
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return strader
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return -port
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return 5600
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return -key
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return 783959fd0373206395bc
+ReceiveContinuousLineFromSocket maxlen=1024, desc=14
+ReceiveContinuousLineFromSocket return 
+GetConnectionParameters return 1
+LoadVisItLibrary
+Calling dlopen(libsimV2runtime_ser.so)
+visit_get_runtime_function handle=0x557fab895910, name=simv2_get_engine
+visit_get_runtime_function func=0x7f33d8032980
+visit_get_runtime_function handle=0x557fab895910, name=simv2_get_descriptor
+visit_get_runtime_function func=0x7f33d8032a70
+visit_get_runtime_function handle=0x557fab895910, name=simv2_process_input
+visit_get_runtime_function func=0x7f33d8032a80
+visit_get_runtime_function handle=0x557fab895910, name=simv2_initialize
+visit_get_runtime_function func=0x7f33d8033d50
+visit_get_runtime_function handle=0x557fab895910, name=simv2_connect_viewer
+visit_get_runtime_function func=0x7f33d80329e0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_time_step_changed
+visit_get_runtime_function func=0x7f33d8032c60
+visit_get_runtime_function handle=0x557fab895910, name=simv2_execute_command
+visit_get_runtime_function func=0x7f33d8032ce0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_disconnect
+visit_get_runtime_function func=0x7f33d8032df0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_slave_process_callback
+visit_get_runtime_function func=0x7f33d8032e50
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_command_callback
+visit_get_runtime_function func=0x7f33d8032e60
+visit_get_runtime_function handle=0x557fab895910, name=simv2_save_window
+visit_get_runtime_function func=0x7f33d8032fb0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_debug_logs
+visit_get_runtime_function func=0x7f33d8032e70
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_mpicomm
+visit_get_runtime_function func=0x7f33d8032f90
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_mpicomm_f
+visit_get_runtime_function func=0x7f33d8032fa0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_add_plot
+visit_get_runtime_function func=0x7f33d80330a0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_add_operator
+visit_get_runtime_function func=0x7f33d80331f0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_draw_plots
+visit_get_runtime_function func=0x7f33d80332d0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_delete_active_plots
+visit_get_runtime_function func=0x7f33d8033320
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_active_plots
+visit_get_runtime_function func=0x7f33d8033370
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_plot_options
+visit_get_runtime_function func=0x7f33d80333d0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_operator_options
+visit_get_runtime_function func=0x7f33d80334c0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_initialize_batch
+visit_get_runtime_function func=0x7f33d8033680
+visit_get_runtime_function handle=0x557fab895910, name=simv2_exportdatabase_with_options
+visit_get_runtime_function func=0x7f33d8033dd0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_restoresession
+visit_get_runtime_function func=0x7f33d80335b0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_ActivateTimestep
+visit_get_runtime_function func=0x7f33d8034de0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_GetMetaData
+visit_get_runtime_function func=0x7f33d8034e40
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_GetMesh
+visit_get_runtime_function func=0x7f33d8034ea0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_GetMaterial
+visit_get_runtime_function func=0x7f33d8034f00
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_GetSpecies
+visit_get_runtime_function func=0x7f33d8034f60
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_GetVariable
+visit_get_runtime_function func=0x7f33d8034fc0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_GetMixedVariable
+visit_get_runtime_function func=0x7f33d8035020
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_GetCurve
+visit_get_runtime_function func=0x7f33d8035080
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_GetDomainList
+visit_get_runtime_function func=0x7f33d80350e0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_GetDomainBoundaries
+visit_get_runtime_function func=0x7f33d8035140
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_GetDomainNesting
+visit_get_runtime_function func=0x7f33d80351a0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_WriteBegin
+visit_get_runtime_function func=0x7f33d8035200
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_WriteEnd
+visit_get_runtime_function func=0x7f33d8035260
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_WriteMesh
+visit_get_runtime_function func=0x7f33d80352c0
+visit_get_runtime_function handle=0x557fab895910, name=simv2_set_WriteVariable
+visit_get_runtime_function func=0x7f33d8035320
+LoadVisItLibrary return 1
+CreateEngine
+  Calling simv2_get_engine
+Calling simv2_initialize: argv=visit -v 2.12 -engine -host strader -port 5600 -key 783959fd0373206395bc 
+VisItDisconnect
+      Calling simv2_disconnect
+VisItDisconnect
+CreateEngine simv2_initialize failed. return VISIT_ERROR
+InitializeRuntime CreateEngine failed. return 0
+VisItAttemptToCompleteConnection InitializeRuntime failed. return 0
+VisItGetLastError
+VisItGetLastError return 
+VisItDetectInput blocking=1, consoleFile=0
