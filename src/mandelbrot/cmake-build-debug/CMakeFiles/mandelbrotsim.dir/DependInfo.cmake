@@ -9,8 +9,17 @@ set(CMAKE_DEPENDS_CHECK_C
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "OMPI_SKIP_MPICXX"
+  )
+
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
+  "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent"
+  "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include"
+  "/usr/lib/x86_64-linux-gnu/openmpi/include"
   "/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
@@ -19,8 +28,17 @@ set(CMAKE_DEPENDS_CHECK_CXX
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "OMPI_SKIP_MPICXX"
+  )
+
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
+  "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent"
+  "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include"
+  "/usr/lib/x86_64-linux-gnu/openmpi/include"
   "/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include"
   )
 

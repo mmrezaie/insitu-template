@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/mrez/workspace/code/insitu/src/mandelbrot/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -123,6 +123,19 @@ mandelbrotsim/fast:
 	$(MAKE) -f CMakeFiles/mandelbrotsim.dir/build.make CMakeFiles/mandelbrotsim.dir/build
 .PHONY : mandelbrotsim/fast
 
+#=============================================================================
+# Target rules for targets named mandelbrot
+
+# Build rule for target.
+mandelbrot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mandelbrot
+.PHONY : mandelbrot
+
+# fast build rule for target.
+mandelbrot/fast:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/build
+.PHONY : mandelbrot/fast
+
 extract.o: extract.c.o
 
 .PHONY : extract.o
@@ -130,6 +143,7 @@ extract.o: extract.c.o
 # target to build an object file
 extract.c.o:
 	$(MAKE) -f CMakeFiles/mandelbrotsim.dir/build.make CMakeFiles/mandelbrotsim.dir/extract.c.o
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/extract.c.o
 .PHONY : extract.c.o
 
 extract.i: extract.c.i
@@ -139,6 +153,7 @@ extract.i: extract.c.i
 # target to preprocess a source file
 extract.c.i:
 	$(MAKE) -f CMakeFiles/mandelbrotsim.dir/build.make CMakeFiles/mandelbrotsim.dir/extract.c.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/extract.c.i
 .PHONY : extract.c.i
 
 extract.s: extract.c.s
@@ -148,7 +163,35 @@ extract.s: extract.c.s
 # target to generate assembly for a file
 extract.c.s:
 	$(MAKE) -f CMakeFiles/mandelbrotsim.dir/build.make CMakeFiles/mandelbrotsim.dir/extract.c.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/extract.c.s
 .PHONY : extract.c.s
+
+mandelbrot.o: mandelbrot.C.o
+
+.PHONY : mandelbrot.o
+
+# target to build an object file
+mandelbrot.C.o:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.C.o
+.PHONY : mandelbrot.C.o
+
+mandelbrot.i: mandelbrot.C.i
+
+.PHONY : mandelbrot.i
+
+# target to preprocess a source file
+mandelbrot.C.i:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.C.i
+.PHONY : mandelbrot.C.i
+
+mandelbrot.s: mandelbrot.C.s
+
+.PHONY : mandelbrot.s
+
+# target to generate assembly for a file
+mandelbrot.C.s:
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/mandelbrot.C.s
+.PHONY : mandelbrot.C.s
 
 mandelbulbsim.o: mandelbulbsim.C.o
 
@@ -184,6 +227,7 @@ patch.o: patch.C.o
 # target to build an object file
 patch.C.o:
 	$(MAKE) -f CMakeFiles/mandelbrotsim.dir/build.make CMakeFiles/mandelbrotsim.dir/patch.C.o
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/patch.C.o
 .PHONY : patch.C.o
 
 patch.i: patch.C.i
@@ -193,6 +237,7 @@ patch.i: patch.C.i
 # target to preprocess a source file
 patch.C.i:
 	$(MAKE) -f CMakeFiles/mandelbrotsim.dir/build.make CMakeFiles/mandelbrotsim.dir/patch.C.i
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/patch.C.i
 .PHONY : patch.C.i
 
 patch.s: patch.C.s
@@ -202,6 +247,7 @@ patch.s: patch.C.s
 # target to generate assembly for a file
 patch.C.s:
 	$(MAKE) -f CMakeFiles/mandelbrotsim.dir/build.make CMakeFiles/mandelbrotsim.dir/patch.C.s
+	$(MAKE) -f CMakeFiles/mandelbrot.dir/build.make CMakeFiles/mandelbrot.dir/patch.C.s
 .PHONY : patch.C.s
 
 # Help Target
@@ -210,12 +256,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... mandelbrotsim"
+	@echo "... rebuild_cache"
+	@echo "... mandelbrot"
 	@echo "... extract.o"
 	@echo "... extract.i"
 	@echo "... extract.s"
+	@echo "... mandelbrot.o"
+	@echo "... mandelbrot.i"
+	@echo "... mandelbrot.s"
 	@echo "... mandelbulbsim.o"
 	@echo "... mandelbulbsim.i"
 	@echo "... mandelbulbsim.s"

@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/mrez/workspace/code/insitu/src/mandelbrot/extract.c" "/home/mrez/workspace/code/insitu/src/mandelbrot/build/CMakeFiles/mandelbrotsim.dir/extract.c.o"
+  "/home/mrez/workspace/code/insitu/src/mandelbrot/extract.c" "/home/mrez/workspace/code/insitu/src/mandelbrot/build/CMakeFiles/mandelbrot.dir/extract.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -23,8 +23,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mrez/workspace/code/insitu/src/mandelbrot/mandelbulbsim.C" "/home/mrez/workspace/code/insitu/src/mandelbrot/build/CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o"
-  "/home/mrez/workspace/code/insitu/src/mandelbrot/patch.C" "/home/mrez/workspace/code/insitu/src/mandelbrot/build/CMakeFiles/mandelbrotsim.dir/patch.C.o"
+  "/home/mrez/workspace/code/insitu/src/mandelbrot/mandelbrot.C" "/home/mrez/workspace/code/insitu/src/mandelbrot/build/CMakeFiles/mandelbrot.dir/mandelbrot.C.o"
+  "/home/mrez/workspace/code/insitu/src/mandelbrot/patch.C" "/home/mrez/workspace/code/insitu/src/mandelbrot/build/CMakeFiles/mandelbrot.dir/patch.C.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

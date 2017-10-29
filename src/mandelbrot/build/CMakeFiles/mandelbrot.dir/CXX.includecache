@@ -6,25 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/home/mrez/workspace/code/insitu/src/mandelbrot/extract.h
+/home/mrez/workspace/code/insitu/src/mandelbrot/SimulationExample.h
+string.h
+-
+stdlib.h
+-
+Windows.h
+-
+unistd.h
+-
 
-/home/mrez/workspace/code/insitu/src/mandelbrot/mandelbulbsim.C
+/home/mrez/workspace/code/insitu/src/mandelbrot/mandelbrot.C
 VisItControlInterface_V2.h
 -
 VisItDataInterface_V2.h
 -
 stdio.h
 -
-string.h
--
 stdlib.h
 -
 math.h
 -
+string.h
+-
+iostream
+-
+sstream
+-
 mpi.h
 -
-extract.h
-/home/mrez/workspace/code/insitu/src/mandelbrot/extract.h
+patch.h
+/home/mrez/workspace/code/insitu/src/mandelbrot/patch.h
+SimulationExample.h
+/home/mrez/workspace/code/insitu/src/mandelbrot/SimulationExample.h
 
 /home/mrez/workspace/code/insitu/src/mandelbrot/patch.C
 map

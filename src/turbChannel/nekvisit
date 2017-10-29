@@ -14,6 +14,8 @@ fi
 # Set VISIT to the directory where a version of VisIt is installed.
 # You can override this by just setting VISIT env variable.
 #VISIT=${VISIT:=/path/to/visit/source/install}
+
+VISIT=/usr/local/visit
 if [ -z "${VISIT}" ] ; then
     VISIT=`which visit`
     ret_code=$?

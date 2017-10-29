@@ -1,4 +1,4 @@
-### makefile automatically created by makenek 10/17/2017 18:07:01 ###
+### makefile automatically created by makenek 10/24/2017 15:08:11 ###
 BINNAME=nek5000
 LIBNAME=libnek5000.a
 CASENAME:=turbChannel
@@ -7,7 +7,7 @@ S:=/home/mrez/workspace/local/Nek5000/core
 SCMT:=/home/mrez/workspace/local/Nek5000/core/cmt
 OPT_INCDIR=./
 OBJDIR=obj
-MPI:=0
+MPI:=1
 CMT:=0
 NEKNEK:=0
 FC:=mpif77
@@ -15,9 +15,9 @@ CC:=mpicc
 FFLAGS:= -fdefault-real-8 -fdefault-double-8 -cpp
 CFLAGS:=
 PPPO=
-PPS= NOMPIIO UNDERSCORE TIMER VISIT VISIT_STOP
+PPS= MPI UNDERSCORE TIMER VISIT VISIT_STOP
 USR:=
-USR_LFLAGS:= -L/home/mrez/workspace/local/Nek5000/3rd_party/gslib/src -lgsserial
+USR_LFLAGS:= -L/home/mrez/workspace/local/Nek5000/3rd_party/gslib/src -lgs
 VISIT:=1
 VISIT_IFLAGS:=-I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include
 VISIT_LFLAGS:=-L/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/lib -lsimV2 -lsimV2f -ldl -lstdc++

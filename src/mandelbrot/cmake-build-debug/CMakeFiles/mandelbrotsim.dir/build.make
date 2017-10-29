@@ -142,6 +142,7 @@ mandelbrotsim: CMakeFiles/mandelbrotsim.dir/extract.c.o
 mandelbrotsim: CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o
 mandelbrotsim: CMakeFiles/mandelbrotsim.dir/patch.C.o
 mandelbrotsim: CMakeFiles/mandelbrotsim.dir/build.make
+mandelbrotsim: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
 mandelbrotsim: CMakeFiles/mandelbrotsim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mrez/workspace/code/insitu/src/mandelbrot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable mandelbrotsim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mandelbrotsim.dir/link.txt --verbose=$(VERBOSE)

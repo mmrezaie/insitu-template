@@ -1,5 +1,5 @@
-set(CMAKE_CXX_COMPILER "/usr/lib/ccache/c++")
-set(CMAKE_CXX_COMPILER_ARG1 "")
+set(CMAKE_CXX_COMPILER "/usr/local/bin/cc_args.py")
+set(CMAKE_CXX_COMPILER_ARG1 " g++")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "6.3.0")
 set(CMAKE_CXX_COMPILER_WRAPPER "")

@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_FLAGS = -g  
 
-C_DEFINES = 
+C_DEFINES = -DOMPI_SKIP_MPICXX
 
-C_INCLUDES = -I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include 
+C_INCLUDES = -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include 
 
 CXX_FLAGS = -g   -std=gnu++11
 
-CXX_DEFINES = 
+CXX_DEFINES = -DOMPI_SKIP_MPICXX
 
-CXX_INCLUDES = -I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include 
+CXX_INCLUDES = -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include 
 

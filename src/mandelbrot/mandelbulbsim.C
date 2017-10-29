@@ -43,6 +43,11 @@
 #include <string.h>
 #include <stdlib.h>
 #include <math.h>
+
+#ifndef PARALLEL
+#define PARALLEL
+#endif
+
 #ifdef PARALLEL
 #include <mpi.h>
 #endif

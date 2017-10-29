@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/mandelbrots.dir/extract.c.o CMakeFiles/mandelbrots.dir/mandelbulbsim.C.o CMakeFiles/mandelbrots.dir/patch.C.o  -o mandelbrots  -L/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/lib 

@@ -31,7 +31,7 @@ PPLIST=""
 #USR="foo.o"
 
 # MPI (default 1) 
-MPI=0
+#MPI=1
 
 # profiling (default 1)
 #PROFILING=0

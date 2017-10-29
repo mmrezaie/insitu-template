@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/mrez/workspace/code/insitu/src/mandelbrot/build",
+  "command": "/usr/lib/ccache/cc  -DOMPI_SKIP_MPICXX -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include    -o CMakeFiles/mandelbrotsim.dir/extract.c.o   -c /home/mrez/workspace/code/insitu/src/mandelbrot/extract.c",
+  "file": "/home/mrez/workspace/code/insitu/src/mandelbrot/extract.c"
+},
+{
+  "directory": "/home/mrez/workspace/code/insitu/src/mandelbrot/build",
+  "command": "/usr/local/bin/cc_args.py  g++  -DOMPI_SKIP_MPICXX -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include    -std=gnu++11 -o CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o -c /home/mrez/workspace/code/insitu/src/mandelbrot/mandelbulbsim.C",
+  "file": "/home/mrez/workspace/code/insitu/src/mandelbrot/mandelbulbsim.C"
+},
+{
+  "directory": "/home/mrez/workspace/code/insitu/src/mandelbrot/build",
+  "command": "/usr/local/bin/cc_args.py  g++  -DOMPI_SKIP_MPICXX -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include    -std=gnu++11 -o CMakeFiles/mandelbrotsim.dir/patch.C.o -c /home/mrez/workspace/code/insitu/src/mandelbrot/patch.C",
+  "file": "/home/mrez/workspace/code/insitu/src/mandelbrot/patch.C"
+},
+{
+  "directory": "/home/mrez/workspace/code/insitu/src/mandelbrot/build",
+  "command": "/usr/lib/ccache/cc  -DOMPI_SKIP_MPICXX -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include    -o CMakeFiles/mandelbrot.dir/extract.c.o   -c /home/mrez/workspace/code/insitu/src/mandelbrot/extract.c",
+  "file": "/home/mrez/workspace/code/insitu/src/mandelbrot/extract.c"
+},
+{
+  "directory": "/home/mrez/workspace/code/insitu/src/mandelbrot/build",
+  "command": "/usr/local/bin/cc_args.py  g++  -DOMPI_SKIP_MPICXX -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include    -std=gnu++11 -o CMakeFiles/mandelbrot.dir/mandelbrot.C.o -c /home/mrez/workspace/code/insitu/src/mandelbrot/mandelbrot.C",
+  "file": "/home/mrez/workspace/code/insitu/src/mandelbrot/mandelbrot.C"
+},
+{
+  "directory": "/home/mrez/workspace/code/insitu/src/mandelbrot/build",
+  "command": "/usr/local/bin/cc_args.py  g++  -DOMPI_SKIP_MPICXX -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include    -std=gnu++11 -o CMakeFiles/mandelbrot.dir/patch.C.o -c /home/mrez/workspace/code/insitu/src/mandelbrot/patch.C",
+  "file": "/home/mrez/workspace/code/insitu/src/mandelbrot/patch.C"
+}
+]

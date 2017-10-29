@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.7)
 project(mandelbrot)
 
+find_package(MPI REQUIRED)
+# add this line only when you are using openmpi which has a different c++ bindings
+add_definitions(-DOMPI_SKIP_MPICXX)
+include_directories(SYSTEM ${MPI_INCLUDE_PATH})
+
 set(CMAKE_CXX_STANDARD 11)
 
 set(VISITHOME /usr/local/visit/)
@@ -34,14 +39,13 @@ set(INTERACTIVE_SOURCE_FILES
         extract.h
         Makefile
         mandelbrot.C
-        mandelbulbsim.C
+        #mandelbulbsim.C
         patch.C
         patch.h
         SimulationExample.h)
 
-#add_executable(mandelbrot ${INTERACTIVE_SOURCE_FILES})
+add_executable(mandelbrot ${INTERACTIVE_SOURCE_FILES})
 add_executable(mandelbrotsim ${SOURCE_FILES})
 
-
-target_link_libraries(mandelbrotsim simV2 simV2f ${CMAKE_DL_LIBS})
-#target_link_libraries(mandelbrot simV2 simV2f ${CMAKE_DL_LIBS})
+target_link_libraries(mandelbrotsim simV2 simV2f ${CMAKE_DL_LIBS} ${MPI_C_LIBRARIES})
+target_link_libraries(mandelbrot simV2 simV2f ${CMAKE_DL_LIBS})

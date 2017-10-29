@@ -84,15 +84,15 @@ CMakeFiles/mandelbrotsim.dir/extract.c.o.provides.build: CMakeFiles/mandelbrotsi
 CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o: CMakeFiles/mandelbrotsim.dir/flags.make
 CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o: ../mandelbulbsim.C
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mrez/workspace/code/insitu/src/mandelbrot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o -c /home/mrez/workspace/code/insitu/src/mandelbrot/mandelbulbsim.C
+	/usr/local/bin/cc_args.py  g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o -c /home/mrez/workspace/code/insitu/src/mandelbrot/mandelbulbsim.C
 
 CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mrez/workspace/code/insitu/src/mandelbrot/mandelbulbsim.C > CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.i
+	/usr/local/bin/cc_args.py  g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mrez/workspace/code/insitu/src/mandelbrot/mandelbulbsim.C > CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.i
 
 CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mrez/workspace/code/insitu/src/mandelbrot/mandelbulbsim.C -o CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.s
+	/usr/local/bin/cc_args.py  g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mrez/workspace/code/insitu/src/mandelbrot/mandelbulbsim.C -o CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.s
 
 CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o.requires:
 
@@ -108,15 +108,15 @@ CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o.provides.build: CMakeFiles/mandel
 CMakeFiles/mandelbrotsim.dir/patch.C.o: CMakeFiles/mandelbrotsim.dir/flags.make
 CMakeFiles/mandelbrotsim.dir/patch.C.o: ../patch.C
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mrez/workspace/code/insitu/src/mandelbrot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mandelbrotsim.dir/patch.C.o"
-	/usr/lib/ccache/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mandelbrotsim.dir/patch.C.o -c /home/mrez/workspace/code/insitu/src/mandelbrot/patch.C
+	/usr/local/bin/cc_args.py  g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mandelbrotsim.dir/patch.C.o -c /home/mrez/workspace/code/insitu/src/mandelbrot/patch.C
 
 CMakeFiles/mandelbrotsim.dir/patch.C.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mandelbrotsim.dir/patch.C.i"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mrez/workspace/code/insitu/src/mandelbrot/patch.C > CMakeFiles/mandelbrotsim.dir/patch.C.i
+	/usr/local/bin/cc_args.py  g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mrez/workspace/code/insitu/src/mandelbrot/patch.C > CMakeFiles/mandelbrotsim.dir/patch.C.i
 
 CMakeFiles/mandelbrotsim.dir/patch.C.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mandelbrotsim.dir/patch.C.s"
-	/usr/lib/ccache/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mrez/workspace/code/insitu/src/mandelbrot/patch.C -o CMakeFiles/mandelbrotsim.dir/patch.C.s
+	/usr/local/bin/cc_args.py  g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mrez/workspace/code/insitu/src/mandelbrot/patch.C -o CMakeFiles/mandelbrotsim.dir/patch.C.s
 
 CMakeFiles/mandelbrotsim.dir/patch.C.o.requires:
 
@@ -142,6 +142,7 @@ mandelbrotsim: CMakeFiles/mandelbrotsim.dir/extract.c.o
 mandelbrotsim: CMakeFiles/mandelbrotsim.dir/mandelbulbsim.C.o
 mandelbrotsim: CMakeFiles/mandelbrotsim.dir/patch.C.o
 mandelbrotsim: CMakeFiles/mandelbrotsim.dir/build.make
+mandelbrotsim: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
 mandelbrotsim: CMakeFiles/mandelbrotsim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mrez/workspace/code/insitu/src/mandelbrot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable mandelbrotsim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mandelbrotsim.dir/link.txt --verbose=$(VERBOSE)

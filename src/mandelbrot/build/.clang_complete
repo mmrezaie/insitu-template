@@ -1,0 +1,13 @@
+-I/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/include
+-std=gnu++11
+-Wl,-rpath,/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/lib
+-I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent
+-I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include
+-I/usr/lib/x86_64-linux-gnu/openmpi/include
+-isystem/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi
+-isystem/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent
+-isystem/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/opal/mca/event/libevent2022/libevent/include
+-isystem/usr/lib/x86_64-linux-gnu/openmpi/include
+-Wl,-rpath,/usr/local/visit/2.12.3/linux-x86_64/libsim/V2/lib:/usr/lib/x86_64-linux-gnu/openmpi/lib
+-DOMPI_SKIP_MPICXX

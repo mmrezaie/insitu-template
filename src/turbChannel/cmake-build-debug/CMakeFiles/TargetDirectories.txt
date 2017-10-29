@@ -1,3 +1,0 @@
-/home/mrez/workspace/code/insitu/src/turbChannel/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/mrez/workspace/code/insitu/src/turbChannel/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mrez/workspace/code/insitu/src/turbChannel/cmake-build-debug/CMakeFiles/turbChannel.dir
