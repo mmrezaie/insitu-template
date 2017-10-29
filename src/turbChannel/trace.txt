@@ -1,0 +1,64 @@
+VisItOpenTraceFile
+VisItSetupEnvironment
+VisItSetupEnvironment2
+    ReadEnvironmentFromCommand visitpath=/usr/local/visit/bin/visit
+        command=/usr/local/visit/bin/visit  -env -engine 2>/dev/null
+        Output=LD_LIBRARY32_PATH=/usr/local/visit/2.12.3/linux-x86_64/lib
+LD_LIBRARY64_PATH=/usr/local/visit/2.12.3/linux-x86_64/lib
+LD_LIBRARYN32_PATH=/usr/local/visit/2.12.3/linux-x86_64/lib
+LD_LIBRARY_PATH=/usr/local/visit/2.12.3/linux-x86_64/lib:/usr/local/visit/bin/../current/linux-x86_64/lib:/usr/local/visit/lib::/usr/lib:/usr/lib32:usr/lib/nvidia-375:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64
+LIBPATH=/usr/local/visit/2.12.3/linux-x86_64/lib
+MESA_GLX_FX=disable
+TRAP_FPE=
+VISITARCHHOME=/usr/local/visit/2.12.3/linux-x86_64
+VISITHOME=/usr/local/visit/2.12.3
+VISITPLUGINDIR=/usr/local/visit/plugins:/home/mrez/.visit/2.12.3/linux-x86_64/plugins:/usr/local/visit/2.12.3/linux-x86_64/plugins
+VISITULTRAHOME=/usr/local/visit/2.12.3/linux-x86_64/ultrawrapper
+VISIT_MESA_LIB=/usr/local/visit/lib/libOSMesa.so
+
+    ReadEnvironmentFromCommand return 811
+    putenv(LD_LIBRARY32_PATH=/usr/local/visit/2.12.3/linux-x86_64/lib)
+    putenv(LD_LIBRARY64_PATH=/usr/local/visit/2.12.3/linux-x86_64/lib)
+    putenv(LD_LIBRARYN32_PATH=/usr/local/visit/2.12.3/linux-x86_64/lib)
+    putenv(LD_LIBRARY_PATH=/usr/local/visit/2.12.3/linux-x86_64/lib:/usr/local/visit/bin/../current/linux-x86_64/lib:/usr/local/visit/lib::/usr/lib:/usr/lib32:usr/lib/nvidia-375:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64)
+    putenv(LIBPATH=/usr/local/visit/2.12.3/linux-x86_64/lib)
+    putenv(MESA_GLX_FX=disable)
+    putenv(TRAP_FPE=)
+    putenv(VISITARCHHOME=/usr/local/visit/2.12.3/linux-x86_64)
+    putenv(VISITHOME=/usr/local/visit/2.12.3)
+    putenv(VISITPLUGINDIR=/usr/local/visit/plugins:/home/mrez/.visit/2.12.3/linux-x86_64/plugins:/usr/local/visit/2.12.3/linux-x86_64/plugins)
+    putenv(VISITULTRAHOME=/usr/local/visit/2.12.3/linux-x86_64/ultrawrapper)
+    putenv(VISIT_MESA_LIB=/usr/local/visit/lib/libOSMesa.so)
+VisItSetupEnvironment2 return 1
+VisItSetupEnvironment return 1
+VisItInitializeSocketAndDumpSimFile
+name=nek5000
+comment=Nek5000 Simulation
+path=/no/useful/path
+inputfile=(null)
+guifile=(null)
+absoluteFilename=(null)
+CreateRandomSecurityKey
+CreateRandomSecurityKey securityKey=ba1c364ddc0e552a
+EnsureSimulationDirectoryExists
+    GetHomeDirectory
+    GetHomeDirectory homedir=/home/mrez
+    mkdir /home/mrez/.visit
+    mkdir /home/mrez/.visit/simulations
+EnsureSimulationDirectoryExists
+GetHomeDirectory
+GetHomeDirectory homedir=/home/mrez
+GetLocalhostName
+      Calling gethostname
+    gethostname returned strader
+
+      Calling gethostbyname
+    Using return value of gethostbyname: strader
+GetLocalhostName return strader
+StartListening
+    Looking for a listening port
+      Calling listen() on socket
+StartListening return 1
+Opening sim file /home/mrez/.visit/simulations/001508850168.nek5000.sim2
+VisItInitializeSocketAndDumpSimFile return 1
+VisItDetectInput blocking=1, consoleFile=-1

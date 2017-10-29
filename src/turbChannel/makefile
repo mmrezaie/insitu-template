@@ -1,8 +1,8 @@
-### makefile automatically created by makenek 10/24/2017 15:08:11 ###
+### makefile automatically created by makenek 10/24/2017 15:12:23 ###
 BINNAME=nek5000
 LIBNAME=libnek5000.a
 CASENAME:=turbChannel
-CASEDIR:=/home/mrez/workspace/code/insitu/src/turbChannel
+CASEDIR:=/home/mrez/workspace/local/NekExamples/turbChannel
 S:=/home/mrez/workspace/local/Nek5000/core
 SCMT:=/home/mrez/workspace/local/Nek5000/core/cmt
 OPT_INCDIR=./
